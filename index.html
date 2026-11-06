@@ -61,11 +61,11 @@
   .acc .go { padding:10px 18px; border-top:1px solid var(--line); font-weight:700; color:var(--c); }
 </style></head>
 <body>
-<div class="hero"><div><h1>SNSレポート（自分用）</h1><p>集計日 2026-10-30 ／ 今週 2026-10-23〜2026-10-29</p>
+<div class="hero"><div><h1>SNSレポート（自分用）</h1><p>集計日 2026-11-06 ／ 今週 2026-10-30〜2026-11-05</p>
 <p>個人アカウントと寺子屋365の数字を、方向性と戦略を考えるためにまとめたもの。会社アカウントの報告とは別。</p></div></div>
 <main><div class="roles" id="cards"></div></main>
 <script>
-const C = [{"key": "kojin", "group": "個人アカウント", "purpose": "明石を<b>三木市</b>で知ってもらい、ファンを作る。入口はInstagram（三木市の歴史・お店）、思想はThreads・note。三木市の外は追わない。", "followers": 2931.0, "posts": 169, "week": 4, "views": 1645857.0, "media": [{"name": "Instagram", "color": "#E1306C", "f": 1578.0}, {"name": "Threads", "color": "#6B6B6B", "f": 1327.0}, {"name": "Facebook", "color": "#1877F2", "f": null}, {"name": "note", "color": "#2CB696", "f": 26.0}]}, {"key": "terakoya", "group": "寺子屋365", "purpose": "<b>会社アカウントのための媒体の試験</b>（AIで量産し、媒体ごとの使い方と反応を確かめる）と、保守層への認知拡大。", "followers": 231.0, "posts": 76, "week": 64, "views": 163889.0, "media": [{"name": "YouTube", "color": "#FF0000", "f": 44.0}, {"name": "Instagram", "color": "#E1306C", "f": 25.0}, {"name": "Facebook", "color": "#1877F2", "f": 151.0}, {"name": "TikTok", "color": "#25B8C9", "f": 11.0}, {"name": "Threads", "color": "#6B6B6B", "f": 0.0}]}];
+const C = [{"key": "kojin", "group": "個人アカウント", "purpose": "明石を<b>三木市</b>で知ってもらい、ファンを作る。入口はInstagram（三木市の歴史・お店）、思想はThreads・note。三木市の外は追わない。", "followers": 2961.0, "posts": 173, "week": 4, "views": 1687548.0, "media": [{"name": "Instagram", "color": "#E1306C", "f": 1610.0}, {"name": "Threads", "color": "#6B6B6B", "f": 1325.0}, {"name": "Facebook", "color": "#1877F2", "f": null}, {"name": "note", "color": "#2CB696", "f": 26.0}]}, {"key": "terakoya", "group": "寺子屋365", "purpose": "<b>会社アカウントのための媒体の試験</b>（AIで量産し、媒体ごとの使い方と反応を確かめる）と、保守層への認知拡大。", "followers": 389.0, "posts": 150, "week": 70, "views": 266316.0, "media": [{"name": "YouTube", "color": "#FF0000", "f": 87.0}, {"name": "Instagram", "color": "#E1306C", "f": 67.0}, {"name": "Facebook", "color": "#1877F2", "f": 210.0}, {"name": "TikTok", "color": "#25B8C9", "f": 21.0}, {"name": "Threads", "color": "#6B6B6B", "f": 4.0}]}];
 const fmt = (v) => v == null ? '—' : Math.round(v).toLocaleString('ja-JP');
 document.getElementById('cards').innerHTML = C.map((c) => `<a class="acc" href="${c.key}.html" style="--c:${c.key === 'kojin' ? '#2f6fb0' : '#b3541e'}">
   <div class="top"><h2>${c.group}</h2><p>${c.purpose}</p></div>
